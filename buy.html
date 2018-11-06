@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="dist/css/public.min.css" rel="stylesheet" type="text/css">
+		<link  href="dist/css/buy.min.css" rel="stylesheet" type="text/css">
+
+		
+		<script type="text/javascript" src="src/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="src/js/jquery.cookie.js"></script>
+	</head>
+
+	<body>
+		<div id="site-nav">
+			<div class="margin">
+				<ul class="fl">欢迎光临易果生鲜！</ul>
+				<ul class="fr" id="fr">
+					<li class="TEL"><a href="#"><i></i>礼品兑换券入口</a></li>
+					<li class="play"><a href="#"><i></i>储值卡</a></li>
+					<li class="mobile"><div class="tit"><a href="#"><i></i>手机易果<s></s></a></div>
+					<div class="con">
+					<div class="item"><img src="dist/img/qrcode_app.jpg" width="125" height="125"><span>扫一扫下载APP</span></div>
+						<div class="item"><img src="dist/img/qrcode_wechat.jpg" width="125" height="125"><span>易果生鲜微信</span></div>
+					</div>
+					</li>
+					<li class="myyiguo"><div class="tit"><a href="#"><i></i>我的易果<s></s></a></div>
+					<div class="con">
+						<a href="#">我的订单</a>
+						<a href="#">我的优惠券<b id="coupon">0</b></a>
+						<a href="#">我的收藏</a>
+						<a href="#">我的悠币</a>
+						<a href="#">我的退换货</a>
+						<a href="#">预存款查询</a>
+						<a href="#">立即充值</a>
+						<a class="logout" href="#" style="display: none;"></a>
+						
+					</div>
+					</li>
+					<!-- <li>登出</li>
+					<li>登录名</li>-->
+					<li id="-register"><a href="register.html">[注册]</a></li>
+					<li id="_login"><a href="login.html">[登陆]</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="cart clear">
+			<div class="margin">
+				<h2>
+				<div class="city clearfix">
+					<div class="city-sz"><i></i>配送至：</div>
+					<div class="city-tit"><a href="#">上海市<s></s></a></div>
+				</div>
+				<a href="index.html" class="on-shopping">继续购物</a>
+				</h2>
+				
+			<div class="cart-alert">
+				
+		<div class="cartList">
+			<ul class="cartHead">
+			<li class="cart-check"><label><input type="checkbox" checked="checked" class="chkAll" />全选</label></li> 
+			<!-- 	<li class="cart-pic">商品图片</li> -->
+				<li class="cart-info">商品信息</li>
+				<li class="cart-ub">悠币</li>
+				<li class="cart-price">单价</li>
+				<li class="cart-num">数量</li>
+				<li class="cart-size">小计</li>
+				<li class="cart-total">规格</li>
+				<li class="cart-opera">操作</li>
+				
+			</ul>
+			<!--<ul class="goodInfo" data-good-id="sp1">
+				<li><img src="img/1.jpg" /></li>
+				<li>测试</li>
+				<li>30</li>
+				<li class="num">
+					<a href="javascript:;" class="minus">-</a>
+					<input type="text" name="" id="" value="2" />
+					<a href="javascript:;" class="plus">+</a>
+				</li>
+				<li class="total">60</li>
+				<li><a href="javascript:;" class="del">删除</a></li>
+			</ul>-->
+			
+			<!--ul<li class="cart-check"><label><input type="checkbox" checked="checked" class="chkAll" />全选</label></li> 
+		
+				<li class="cart-info">商品信息</li>
+				<li class="cart-ub">悠币</li>
+				<li class="cart-price">单价</li>
+				<li class="cart-num">数量</li>
+				<li class="cart-size">小计</li>
+				<li class="cart-total">规格</li>
+				<li class="cart-opera">操作</li></ul>-->
+	
+<!-- 			<div class="cart-footer">
+				<div class="fl"><label><input type="checkbox" class="chkAll" checked="checked">全选</label><a href="#"><i></i>删除选中的商品</a><a href="#">清空购物车</a></div>
+				<div class="fr">
+					<span class="ub">悠币：<em>0</em>个</span><span class="fs14">总价<em>￥<span></span></em><a href="#" class="btn" id="btnSubmit" name="btnSubmit" style="cursor:pointer">去结算</a></span>
+				</div>
+			</div> -->
+			
+			</div>				
+			</div>
+
+			</div>
+		</div>
+		
+				<div id="blank" class="clear">
+					<div class="margin">
+						<div class="cart-none"><p><b>购物车还是空的，去买点东西吧！<a href="index.html">继续逛逛》</a></b></br>您还尚未<a href="login.html">登陆</a></p></div>
+			
+					<div class="pre-buy"></div>
+				</div>
+				</div>
+				
+				<div id="footer clear" class="footer">
+					<div class="margin">
+						<dl class="col1">
+							<dt>新手指南</dt>
+							<dd>
+								<p><a href="#">账户注册</a></p>
+								<p><a href="#">购物流程</a></p>
+								<p><a href="#">订购方式</a></p>
+								<p><a href="#">悠币说明</a></p>
+								<p><a href="#">会员等级</a></p>
+							</dd>
+						</dl>
+						<dl class="col2">
+							<dt>付款方式</dt>
+							<dd>
+								<p><a href="#">支付方式/发票说明</a></p>
+								<p><a href="#">充值说明/储值卡说明</a></p>
+								<p><a href="#">优惠代码/礼品卡说明</a></p>
+								<p><a href="#">卡券购买章程</a></p>
+								
+							</dd>
+						</dl>
+						<dl class="col3">
+							<dt>配送方式</dt>
+							<dd>
+								<p><a href="#">配送运费</a></p>
+								<p><a href="#">配送范围</a></p>
+								<p><a href="#">配送时间</a></p>
+							</dd>
+						</dl>
+						<dl class="col4">
+							<dt>售后服务</dt>
+							<dd>
+								<p><a href="#">退换货政策</a></p>
+								<p><a href="#">退换货政策流程</a></p>
+								<p><a href="#">常见问题</a></p>
+								<p><a href="#">极速退款</a></p>
+								<p><a href="#">投诉与建议</a></p>
+							</dd>
+						</dl>
+						<dl class="col5">
+							<dt>关于我们</dt>
+							<dd>
+								<p><a href="#">公司简绍</a></p>
+								<p><a href="#">联系我们</a></p>
+								<p><a href="#">物业合作</a></p>
+								<p><a href="#">诚信举报</a></p>
+								<p><a href="#">人才招聘</a></p>
+								<p><a href="#">友情链接</a></p>
+							</dd>
+						</dl>
+						<div class="service">
+							
+							<span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+							<span>周一至周日 9:00-21:00</span>
+							
+						</div>
+						<div  class="copyright">
+							<p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+							<p><a href="#">沪ICP备09008015</a>Copyright &copy; 2005-2018
+							<a href="#">上海易果电子商务有限公司</a>版权所有</p>
+							<p class="authentication">
+								<a href="#"><img src="dist/img/153685368061665897_121x29.png" ></a>
+								<a href="#"><img src="dist/img/2517491005058doc.png" height="38.38" width="47" ></a>
+								<a href="#"><img src="dist/img/footer_copy.gif" ></a>
+								<a href="#"><img src="dist/img/ghs.png" > <span>沪公安备 31010502000002号</span></a>
+							</p>
+					
+						
+					</div>
+				</div>
+				</div>
+		
+		
+	<script src="src/js/buy.js" type="text/javascript" charset="UTF-8"></script>
+	
+		
+		<script type="text/javascript">
+			$(function() {
+				//取出在cookie中存的购物车信息
+				var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+
+				if(!cartStr) {
+					$("#blank").css({
+						display: "block"
+					});
+				} else {
+				
+					var cartObj = convertCartStrToObj(cartStr);
+					//遍历所有的商品生成html添加到购物车列表中去
+					for(var id in cartObj) {
+						//商品信息对象
+						var good = cartObj[id];
+// 						var str = '<ul class="goodInfo valign" data-good-id="' + id + '">' +
+// 							'<li><img src="' + good.src + '" /></li>' +
+// 							'<li>' + good.name + '</li>' +
+// 							'<li>' + good.price + '</li>' +
+// 							'<li class="num">' +
+// 							'<a href="javascript:;" class="minus">-</a>' +
+// 							' <input type="text" value="' + good.num + '" />  ' +
+// 							'<a href="javascript:;" class="plus">+</a>' +
+// 							'</li>' +
+// 							'<li class="total">' + good.num * good.price + '</li>' +
+// 							'<li><a href="javascript:;" class="del">删除</a></li>' +
+// 							'</ul>';
+                    var str = '<ul class="goodInfo" data-good-id="' + id + '">' +
+					'<li class="cart-t-check">'+'<input type="checkbox" checked="checked">'+'</li>'+
+							'<li class="cart-t-img"><img class="cart-t-img" src="' + good.src + '" /></li>' +
+							'<li class="cart-t-info">'+ good.name +'</li>'+
+							 '<li class="cart-t-ub">' + '0ub'+ '</li>' +
+							'<li class="price">'+'￥' + good.price + '</li>' +
+							'<li class="num">' +
+							'<a href="javascript:;" class="minus"></a>' +
+							' <input type="text" value="' + good.num + '" />  ' +
+							'<a href="javascript:;" class="plus"></a>' +
+							'</li>' +
+							'<li class="total">' + good.num * good.price + '</li>' +
+							'<li class="spec">'+'24g/包'+'</li>'+
+							'<li class="cart-t-opera"><a href="javascript:;" class="sc">移入收藏</a><a href="javascript:;" class="del">删除</a></li>' 
+							'</ul>';
+							
+						//将上面的结构添加到cartList中去
+						$(str).appendTo(".cartList");
+						
+					}
+				<!--购物车后面的一截-->
+					var footer = '<div class="cart-footer"><div class="fl"><label><input type="checkbox" class="chkAll" checked="checked">全选</label><a href="#"><i></i>删除选中的商品</a><a href="#" class="qkall">清空购物车</a></div><div class="fr"><span class="ub">悠币：<em>0</em>个</span><span class="fs14">总价<em class="ee">￥<span></span></em><a href="#" class="btn" id="btnSubmit" name="btnSubmit" style="cursor:pointer">去结算</a></span></div></div>'
+					$(footer).appendTo(".cart-alert");<!--到这里结束-->
+					/*收藏按钮*/
+					$('.goodInfo a.sc').click(function() { alert("您还尚未登录，请先登录")})
+					//给每个商品添加从购物车删除的事件
+					$('.goodInfo a.del').click(function() {
+						//在页面上将商品信息删除，顺便获取一个该商品的id
+						var id = $(this).parents('.goodInfo').remove().attr("data-good-id");
+						//从cookie中将该商品删除
+						var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+						var cartObj = convertCartStrToObj(cartStr);
+
+						delete cartObj[id];
+						//"sp1,香蕉,30,1,src1:sp2,苹果,40,2,src2:sp3,梨,50,3,str3"
+						/* {
+					 * 	sp1 : {
+					 * 		name : "香蕉",
+						 * price : 30,
+						 * num : 1,
+						 * src : "img/1.jpg"
+					 * },
+					 * sp2 :{
+						 * 	name :"苹果",
+						 * price : 40,
+						 * num:2,
+						 * src : "img/2.jpg"
+					 * },
+					 * sp3{
+						 * 	name : "梨"，
+						 * price : 50,
+						 * num : 3,
+						 * src : "img/3.jpg"
+					 * }
+					 * }
+					 */
+						//将新商品信息放回cookie
+						$.cookie('cart', convertObjToCartStr(cartObj), {
+							expires: 7,
+							path: "/"
+						});
+					})
+					
+					
+					//给清空所有按钮添加事件
+					$(".cart-footer .fl a.qkall").click(function() {
+						var con;
+						con = confirm("确定清空购物车？");
+						if(con == true){
+							$(".cart").empty();
+								// $(".cart").addClass('.blank')
+								// $(".cart").replaceWith('<div id="blank"><div class="margin"><div class="cart-none"><p><b>购物车还是空的，去买点东西吧！<a href="index.html">继续逛逛》</a></b></br>您还尚未<a href="login.html">登陆</a></p></div><div class="pre-buy"></div></div></div>');
+								
+							
+						}
+					})
+
+					//给增加按钮添加事件
+					$(".goodInfo a.plus").click(function() {
+
+						var id = $(this).parents('.goodInfo').attr("data-good-id");
+
+						var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+						var cartObj = convertCartStrToObj(cartStr);
+						cartObj[id].num += 1;
+						//将页面上显示的数量加1
+						$(this).siblings("input").val("" + cartObj[id].num);
+						//更新页面上的小计
+						$(this).parent().siblings('.total').html((cartObj[id].num * cartObj[id].price).toFixed(2) + "");
+						//将信息放回cookie
+						$.cookie('cart', convertObjToCartStr(cartObj), {
+							expires: 7,
+							path: "/"
+						});
+					});
+					//给减按钮添加点击事件
+					$(".goodInfo a.minus").click(function(){
+						var id = $(this).parents('.goodInfo').attr("data-good-id");
+						var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+						var cartObj = convertCartStrToObj(cartStr);
+						if(cartObj[id].num > 1){ //商品数量减少不能少于1
+							cartObj[id].num -= 1;
+							//将页面上显示的数量减1
+							$(this).siblings("input").val("" + cartObj[id].num);
+							//更新页面上的小计
+							$(this).parent().siblings('.total').html((cartObj[id].num * cartObj[id].price).toFixed(2) + "");
+							//将信息放回cookie
+							$.cookie('cart', convertObjToCartStr(cartObj), {
+								expires: 7,
+								path: "/"
+							});
+						}
+						
+						
+					});
+					
+					//改数量的input绑定一个blur事件
+					$(".goodInfo li.num input").blur(function(){
+						var id = $(this).parents('.goodInfo').attr("data-good-id");
+						var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+						var cartObj = convertCartStrToObj(cartStr);
+						//判断用户输入是否合法
+						var pattern = /^\d+$/;
+						if(!pattern.test($(this).val())){
+							cartObj[id].num = 1;
+							$(this).val("1");
+						}else{
+							//修改一下数量
+						cartObj[id].num = parseInt($(this).val());
+						}
+						
+						
+							$(this).siblings("input").val("" + cartObj[id].num);
+							//更新页面上的小计
+							$(this).parent().siblings('.total').html((cartObj[id].num * cartObj[id].price).toFixed(2) + "");
+							//将信息放回cookie
+							$.cookie('cart', convertObjToCartStr(cartObj), {
+								expires: 7,
+								path: "/"
+							});
+					})
+					
+			}
+
+			});
+
+			function convertCartStrToObj(cartStr) {
+				//"sp1,香蕉,30,1,src1:sp2,苹果,40,2,src2:sp3,梨,50,3,str3"
+				//如果是空字符串，即没有购物车信息，那么购物车为空，直接返回一个空对象
+				if(!cartStr) {
+					return {};
+				}
+				var goods = cartStr.split(":");
+				var obj = {};
+				for(var i = 0; i < goods.length; i++) {
+					var data = goods[i].split(",");
+					//以商品的id为健，商品的其他信息为值，这个值也设计为一个对象
+					obj[data[0]] = {
+						name: data[1],
+						price: parseFloat(data[2]),
+						num: parseInt(data[3]),
+						src: data[4]
+					}
+				}
+				return obj;
+			}
+
+			function convertObjToCartStr(obj) {
+				/* {
+				 * 	sp1 : {
+				 * 		name : "香蕉",
+				 * price : 30,
+				 * num : 1,
+				 * src : "img/1.jpg"
+				 * },
+				 * sp2 :{
+				 * 	name :"苹果",
+				 * price : 40,
+				 * num:2,
+				 * src : "img/2.jpg"
+				 * },
+				 * sp3{
+				 * 	name : "梨"，
+				 * price : 50,
+				 * num : 3,
+				 * src : "img/3.jpg"
+				 * }
+				 * }
+				 */
+				var cartStr = "";
+				for(var id in obj) {
+					if(cartStr) {
+						cartStr += ":";
+					}
+					cartStr += id + "," + obj[id].name + "," + obj[id].price + "," + obj[id].num + "," + obj[id].src;
+				}
+				return cartStr;
+			}
+		</script>
+	</body>
+
+</html>

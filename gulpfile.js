@@ -9,7 +9,7 @@ cssnano =require('gulp-cssnano');
 
 //创建并发布任务
 /*gulp.task('js',function(){
-	return gulp.src('./src/js/*.js').pipe(concat('main.js')).pipe(rename({'suffix':'.min'})).pipe(uglify()).pipe(gulp.dest('dist'));
+	return gulp.src('./src/js/*.js').pipe(concat('main.js')).pipe(rename({'suffix':'.min'})).pipe(uglify()).pipe(gulp.dest('dist/js'));
 })*/
 //压缩图片
 gulp.task('img',function(){
@@ -21,7 +21,7 @@ gulp.task('sass',function(){
 })
 //发布监听任务
 gulp.task('default',function(){
-	// gulp.watch('./src/js/*.js',['js']);
+   /* gulp.watch('./src/js/*.js',['js']);*/
 	gulp.watch('./src/image/*',['img']);
 	gulp.watch('./src/sass/*.scss',['sass']);
 })

@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import'public';
+body{width: 100%;background:#f7f8f8;}
+.margin{width: 1200px;margin: 0 auto;}
+/*头部*/
+.header{ background: #e0e0e0;height: 70px;
+	.margin{
+		padding:15px 0 5px 0;
+	.logo{
+		position: relative;float: left;
+		a{width: 195px;height: 50px;display: block;background: url(../../dist/img/logo.png) no-repeat; }
+		.gotop{display: none;}
+		.h-tit{color:#008842;left:240px;font:28px/1 "宋体";position:absolute;top:6px;white-space: nowrap}
+	}
+	
+	}
+}
+
+form{
+	.login{ border:none;/*background:#fff;*/padding-top:30px;
+		.margin{
+			.fl{float: left;
+			a{color:#333;}
+			img{margin-top: 20px;border:none;width:666px;height:418px;}
+			}
+			
+			
+			.fr{float: right;padding-right: 105px;
+			p{margin-bottom: 20px;font:12px/1 "宋体";color:#878787;position: relative;overflow: hidden;}
+			.input{padding-left: 50px;width:254px;background:url(../../dist/img/bg_input.png) no-repeat;border:1px solid #c1c1c1;background:#fff;height:38px;vertical-align: middle;font:14px/38px "宋体"; }
+            .right{text-align: right;}
+			.login-main{
+				width: 308px;padding: 30px 20px 20px;background:#fff;border:1px solid #e3e6e0;
+				p{width: 100%;
+				strong{color:#262626;font:18px/1 "宋体"; }
+				span{position: absolute;right: 0;top:0;
+				 a{text-decoration: underline;color:#008842; }}
+				}
+				.msg-wrap{ }
+				.input-phone-icon,.input-key-icon{position:absolute;right: 0;background:url(../../dist/img/bg_input.png) no-repeat;left:1px;top:1px !important;width:40px;height:38px;background-position: 0 -120px;}
+				.input-key-icon{background-position: 0 -180px;}
+				.key{width: 100px;float:left;padding-left:50px;background-position:0 -180px !important;width:40px;height:38px;background:url(../../dist/img/bg_input.png) no-repeat;left:1px;top:1px !important;}
+				.gray{color:#878787;cursor:pointer;}
+				label{input{margin-right: 9px;height:14px;width:14px;vertical-align:-1px; }}
+			}
+			
+			.btn-green-l{
+				 background: #008842;display: inline-block;height: 50px;text-align: center;color:#fff;font:18px/50px "宋体";width: 306px;}
+				 
+			 }
+			 .p-code{
+				 height: 20px;width: 308px;	 
+				 a{margin-right: 20px;}
+				 i{ display:inline-block;height:20px; background:url(../../dist/img/bg_login.png) no-repeat; }	
+				  .qq{display:inline-block;width: 80px;height: 20px;
+				   i{width: 80px;height: 20px;background-position: -60px -200px; }}
+				 .sina{i{width: 80px;height: 20px;background-position: -160px -200px; }}
+				 .ay{i{width: 80px;height: 20px;background-position: -260px -200px; }}
+				
+		
+			 }
+			 
+			 
+		} 
+	}
+}
+
+
+
+
+
+		 .footer{ 
+				 zoom:1;clear:both;position:relative;padding-bottom: 20px;border-top:1px solid #e0e0e0;margin-top: 30px;
+				 .margin{
+					 margin: 50px auto 0;
+		
+				
+				 dl{ width:190px;float:left;margin-left:50px;display:inline;
+					 dt{
+						 height:23px;line-height:23px;background:url(../../dist/img/footer_icon.png) no-repeat;font-size:14px;text-indent: 40px;
+						 
+					 }
+					 dd{ border-left:1px dashed #a8a8a8;
+					 padding-left:20px;height:110px;min-height:110px;margin:15px 0 0 13px;
+						 p{
+							 a{ color:#575556;line-height: 22px;text-align: center;
+								 
+							 }
+						 }
+					 }
+					 
+				 }
+				 .col1{dt{ background-position:0px 0px;}}
+				 .col2{dt{background-position:0px -23px !important;}}
+				 .col3{dt{background-position:0px -46px;} }
+				 .col4{dt{background-position:0px -69px;}}
+				 .col5{dt{ background-position:0px -92px;}}
+				 .service{ clear:both;text-align: center;padding:60px 0 20px;color: #008842;font-size:14px;float: none;height:96px;box-sizing: border-box;
+					 span{display:inline-block;padding:0 10px;
+						 
+					 }
+				 }
+				 .copyright{clear:both;color:#717171;text-align: center;line-height: 22px;
+				 p{a{color:#717171}}
+				 .authentication{a{
+					 display: inline-block;position: relative;margin: 0 10px;zoom:1;vertical-align: middle;color:#008842;
+					 span{font-size: 12px;color:#001b75;padding:0;margin: 0;top:25px;left: 50px;position: absolute;cursor: pointer;}
+				 }}
+				 }
+				 
+			 }
+			 }
